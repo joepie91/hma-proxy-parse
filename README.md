@@ -6,6 +6,12 @@ This module extracts (parses) proxy details including the IP address from [http:
 
 Note that this module only does the parsing; you're responsible for fetching the source HTML yourself.
 
+## Caution!
+
+Public proxies are [not](https://blog.haschek.at/post/fd9bc) [safe](http://blog.daviddworken.com/post/107949776854/scanning-for-malicious-proxies) [to use](https://github.com/ddworken/maliciousProxyScanner). They can see your IP address and the traffic you send. You are effectively giving the proxy operator full control and knowledge over your browsing, and they may even inject malware in the responses.
+
+If you need to browse the internet privately, consider using [Tor](https://www.torproject.org/index.html.en) instead - however, please make sure to read the [caveats](https://www.torproject.org/download/download-easy.html.en#warning) that you need to keep in mind. Even with these caveats, Tor is vastly more secure than a public proxy.
+
 ## License
 
 [WTFPL](http://www.wtfpl.net/txt/copying/) or [CC0](https://creativecommons.org/publicdomain/zero/1.0/), whichever you prefer. A donation and/or attribution are appreciated, but not required.
