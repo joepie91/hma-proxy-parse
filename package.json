@@ -1,6 +1,6 @@
 {
   "name": "hma-proxy-parse",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Parses proxies out of HideMyAss' public proxy list.",
   "main": "index.js",
   "scripts": {
