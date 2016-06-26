@@ -19,12 +19,12 @@ module.exports = (html) ->
 	rows.each ->
 		element = $(this)
 		timestamp = element.children(".timestamp").attr("rel")
-		port = element.children("td:nth-of-type(3)").text().replace("\n", "")
-		country = element.find("td .country").parent().attr("rel")
+		port = element.children("td:nth-of-type(3)").text().replace(/\n/g, "").trim()
+		country = element.find("td.country").parent().attr("rel")
 		speed = element.find("td .progress-indicator").eq(0).attr("value")
 		connectionTime = element.find("td .progress-indicator").eq(1).attr("value")
-		protocol = element.children("td:nth-of-type(7)").text()
-		anonymity = element.children("td:nth-of-type(8)").text()
+		protocol = element.children("td:nth-of-type(7)").text().replace(/\n/g, "").trim()
+		anonymity = element.children("td:nth-of-type(8)").text().replace(/\n/g, "").trim()
 
 		ipSegments = []
 
